@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-fixed {
+  @apply fixed z-40 bg-white bg-opacity-30;
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hr-text {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #d1d5db; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+.hr-text span { 
+    background:#fff; 
+    padding:0 10px; 
+    color: #9ca3af;
+}
+
+/* Not Responsive */
+
+.tabAnim {
+  z-index: -9;
+}
+
+#option0:checked ~ div {
+  --tw-translate-x: 0%;
+}
+
+#option1:checked ~ div {
+  --tw-translate-x: 100%;
+}
+
+#option2:checked ~ div {
+  --tw-translate-x: 200%;
+}
+
+#option3:checked ~ div {
+  --tw-translate-x: 300%;
+}
+
+#option4:checked ~ div {
+  --tw-translate-x: 400%;
+}
+
+.nav-active {
+  @apply bg-primary-500 text-white md:bg-transparent md:text-primary-500 border-b-[3px] border-primary-500;
+}
+
+.active-nav {
+  @apply text-primary-600;
+}
+
+/* .nav-active::after {
+  margin: auto;
+  @apply border-2 border-blue-700 w-1/2;
+} */

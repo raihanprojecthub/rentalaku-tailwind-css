@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | Rentalaku</title>
+  <link rel="shortcutcut icon" href="src/img/rentalaku-logo-orange.png">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <!-- Modal Section Start -->
+  <section id="modal" class="bg-gray-50">
+    <div class="px-4 py-4">
+      <div class="flex justify-between bg-white p-3 max-w-3xl mx-auto shadow-md rounded-lg ">
+        <p class="">
+          Perhatian! Website ini statis tidak terhubung ke database, jika ingin masuk tekan tombol <a href="dist/menu/home.html" class="text-orange-600">Sign In</a>.
+        </p>
+        <div class="pl-2"> 
+          <button id="close-modal" class="hover:text-orange-600 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal Section End -->
+
+  <!-- Sign In Section Start -->
+  <section id="signin" class="bg-gray-50 h-screen">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto h-screen lg:py-0">
+      <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+        <img class="w-8 h-8 mr-2" src="src/img/rentalaku-logo-orange.png" alt="Rentalaku Logo">
+        RENTALAKU
+      </a>
+      <div
+        class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+          <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            Sign in to your account
+          </h1>
+          <form class="space-y-4 md:space-y-6" action="#">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+              <input type="email" name="email" id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:border-[2px] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 focus:outline-none"
+                placeholder="name@company.com">
+            </div>
+            <div>
+              <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+              <input type="password" name="password" id="password" placeholder="••••••••"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:border-[2px] focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 focus:outline-none">
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="remember" aria-describedby="remember" type="checkbox"
+                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800">
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="remember" class="text-gray-500 dark:text-gray-300">Remember me</label>
+                </div>
+              </div>
+              <a href="dist/account/forgot.html" class="text-sm  font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot
+                password?</a>
+            </div>
+            <a href="dist/menu/home.html" type="submit"
+              class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign
+              in</a>
+
+            <h2 class="hr-text my-6"><span>OR</span></h2>
+            
+            <button type="button"
+              class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
+              <div class="flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-6 h-6"
+                  viewBox="0 0 48 48">
+                  <defs>
+                    <path id="a"
+                      d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                  </defs>
+                  <clipPath id="b">
+                    <use xlink:href="#a" overflow="visible" />
+                  </clipPath>
+                  <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z" />
+                  <path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                  <path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                  <path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z" />
+                </svg>
+                <span class="ml-4">
+                  Sign in
+                  with
+                  Google
+                </span>
+              </div>
+            </button>
+            <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+              Don't have an account yet? <a href="dist/account/signup.html"
+                class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sign In Section Start -->
+
+  <!-- Modal JS Start -->
+  <script>
+    const modalClose = document.querySelector('#close-modal')
+    const modalSection = document.querySelector('#modal')
+    const signinSection = document.querySelector('#signin')
+
+    modalClose.addEventListener('click', function () {
+      modalSection.classList.add('hidden')
+      signinSection.classList.add('pt-10')
+    });
+  </script>
+  <!-- Modal JS End -->
+
+  <script src="dist/js/script.js"></script>
+</body>
+</html>
